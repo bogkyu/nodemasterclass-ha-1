@@ -24,7 +24,7 @@ Please create a simple "Hello World" API. Meaning:
 
 I tried to follow the recipe from the lectures, and I came up with this solution.
 
-Particularly, I created an uniform return object.  The asnwers also trasmit if an
+Particularly, I created an uniform return object.  The answers also trasmit if an
 error had been identified:
 
 * if the path is present in routes (actually, there is only one, '``hello`'):
