@@ -45,8 +45,8 @@ var reqreshandler = function(req, res){
     buffer += decoder.write(data);
   });
   // handle request
-  req.on('end', function(data){
-    buffer += decoder.end(data);
+  req.on('end', function(){
+    buffer += decoder.end();
     var handler = handlers[pathname];
     if( typeof(handler) === 'undefined') handler = handlers[''];
     handler({'message': buffer, 'path' : pathname}, function(statusCode, pp) {
